@@ -1,7 +1,16 @@
 import React from 'react'
+import { useState } from 'react';
 import '../App.css'
 
 export default function Home() {
+
+  const [musicState, setmusicState] = useState(true);
+
+  // Function to play or pause the music and also changing the icon.
+  const Playmusic = () =>{
+    setmusicState(!musicState)
+  }
+  
   return (
     <>
       {/* Div for navbar */}
@@ -19,7 +28,7 @@ export default function Home() {
           </div>
           {/* Div for Search Icon. */}
           <div className="SearchIcon">
-            <i class="bi bi-search text-base pl-2"></i>
+            <i className="bi bi-search text-base pl-2"></i>
           </div>
         </div>
         {/* Div for buttons. */}
@@ -27,8 +36,10 @@ export default function Home() {
           <button className='maincolor pb-1 px-2 text-base font-bold rounded-sm'>Login</button>
           <button className='border-2 bordercolor maintextcolor pb-1 px-2 text-sm font-bold rounded-sm ml-3 mr-6'>SignUp</button>
           {/* Div for Playpause. */}
-          <div className="Playpausebutton maincolor rounded-full flex justify-center items-center pl-1 h-[3rem] w-[3rem]">
-            <i class="bi bi-play-fill text-5xl flex mx-auto"></i>
+          <div className="Playpausebutton maincolor rounded-full flex justify-center items-center h-[3rem] w-[3rem]">
+            <button onClick={Playmusic}>
+              {musicState ? <i className="bi bi-play-fill text-5xl flex mx-auto pl-1"></i> : <i className="bi bi-pause-fill text-5xl flex mx-auto"></i>}
+            </button>
           </div>
         </div>
       </div>
