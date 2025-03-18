@@ -57,7 +57,7 @@ export default function Home() {
           <button className='maincolor pb-1 px-2 text-[0.9rem] font-bold rounded-sm'>Login</button>
           <button className='border-2 bordercolor maintextcolor pb-1 px-2 text-[0.8rem] font-bold rounded-sm ml-3 mr-6'>SignUp</button>
           {/* Div for Playpause. */}
-          <div className="Playpausebutton maincolor rounded-full flex justify-center items-center h-[2.5rem] w-[2.5rem]">
+          <div className="Playpausebutton maincolor rounded-full flex justify-center items-center h-[2.7rem] w-[2.7rem]">
             <button onClick={Playmusic}>
               {musicState ? (
                 <i className="bi bi-pause-fill text-4xl flex mx-auto"></i>
@@ -129,6 +129,74 @@ export default function Home() {
             <h1 className='inter text-justify text-[0.9rem] mb-3'>The anime faithfully adapted Masashi Kishimoto's manga and expanded on it with additional content and story arcs. Studio Pierrot has a long history of producing successful anime, including Bleach and Tokyo Ghoul. And not only these people. There are many people who worked in Naruto Manga Series, Naruto Anime. For more information click on More Details.</h1>
             <a href='https://en.wikipedia.org/wiki/Naruto' target='_blank' className='mainbutton'>More Details</a>
           </div>
+        </div>
+      </div>
+
+      {/* Div for Naruto Anime, Naruto Movies, Naruto Comics section. */}
+      <div className="TotalNarutoSeries w-[100%] bg-[#FF851B] px-10 py-4 flex flex-col">
+
+        {/* Div for heading. */}
+        <div className="heading w-[100%] flex justify-around items-center border-b-2 border-black">
+          <h1 className='text-black font-extrabold text-2xl montserrat'>Naruto Total Anime Series, Movies, Manga Series</h1>
+        </div>
+
+        {/* Div for Cards section. */}
+        <div className="Cardsection flex flex-wrap justify-between">
+
+          {/* Card 1 Naruto Anime. */}
+          <div className="NarutoAnime bg-white px-8 py-6 flex flex-col justify-between h-[31rem] w-[20rem] mt-8 rounded-lg">
+            {/* Div for Image. */}
+            <div className="Image">
+              <img src="/Photos/Naruto Anime.png" alt="" className='h-[20rem] w-max flex mx-auto' />
+            </div>
+            {/* Div for Text. */}
+            <div className="Text">
+              <h1 className='montserrat text-lg leading-[1.2] font-bold'>Naruto</h1>
+              <h1 className='inter text-lg leading-[1.2]'>(TV Series 2002 - 2007)</h1>
+              <h1 className='inter text-lg leading-[1.2]'>Each Episode Duration: 24m</h1>
+            </div>
+            {/* Div for button. */}
+            <div className="button">
+              <a href='https://www.imdb.com/title/tt0409591/' target='_blank' className='mainbutton'>Watch Now</a>
+            </div>
+          </div>
+
+          {/* Card 2 Naruto: Shippuden. */}
+          <div className="Naruto: Shippuden bg-white px-8 py-6 flex flex-col justify-between h-[31rem] w-[20rem] mt-8 rounded-lg">
+            {/* Div for Image. */}
+            <div className="Image">
+              <img src="/Photos/Naruto Shippuden.png" alt="" className='h-[20rem] w-max flex mx-auto' />
+            </div>
+            {/* Div for Text. */}
+            <div className="Text">
+              <h1 className='montserrat text-lg leading-[1.2] font-bold'>Naruto: Shippuden</h1>
+              <h1 className='inter text-lg leading-[1.2]'>(TV Series 2007 - 2017)</h1>
+              <h1 className='inter text-lg leading-[1.2]'>Each Episode Duration: 24m</h1>
+            </div>
+            {/* Div for button. */}
+            <div className="button">
+              <a href='https://www.imdb.com/title/tt0988824/' target='_blank' className='mainbutton'>Watch Now</a>
+            </div>
+          </div>
+
+          {/* Card 3 Naruto Films. */}
+          <div className="Naruto Films bg-white px-8 py-6 flex flex-col justify-between h-[31rem] w-[20rem] mt-8 rounded-lg">
+            {/* Div for Image. */}
+            <div className="Image">
+              <img src="/Photos/Naruto Films.png" alt="" className='h-[20rem] w-max flex mx-auto' />
+            </div>
+            {/* Div for Text. */}
+            <div className="Text">
+              <h1 className='montserrat text-lg leading-[1.2] font-bold'>Naruto Films</h1>
+              <h1 className='inter text-lg leading-[1.2]'>Films from 2004 - 2015</h1>
+              <h1 className='inter text-lg leading-[1.2]'>Each Film Duration: 1hr to 1.40hr</h1>
+            </div>
+            {/* Div for button. */}
+            <div className="button">
+              <a href='https://www.imdb.com/list/ls078035885/' target='_blank' className='mainbutton'>Watch Now</a>
+            </div>
+          </div>
+
         </div>
       </div>
 
