@@ -1,16 +1,34 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import '../App.css'
 
 export default function Home() {
 
-  const [musicState, setmusicState] = useState(true);
+  // musicState for changing play & pause icon and play & pausing the music.
+  const [musicState, setMusicState] = useState(false);
+  // audioRef to hold audio time line.
+  const audioRef = useRef(null);
 
-  // Function to play or pause the music and also changing the icon.
-  const Playmusic = () =>{
-    setmusicState(!musicState)
-  }
-  
+  // useEffect to play the music from when it is paused time line. If there is not previous time line it will play from start.
+  useEffect(() => {
+    audioRef.current = new Audio("/Audio/Naruto Theme.mp3");
+    audioRef.current.loop = true;
+    return () => {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    };
+  }, []);
+
+  // Function to play,pause the music and update the musicState, And also changing the play pause icon.
+  const Playmusic = () => {
+    if (musicState) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
+    setMusicState(!musicState);
+  };
+
   return (
     <>
       {/* Div for navbar */}
@@ -38,7 +56,11 @@ export default function Home() {
           {/* Div for Playpause. */}
           <div className="Playpausebutton maincolor rounded-full flex justify-center items-center h-[3rem] w-[3rem]">
             <button onClick={Playmusic}>
-              {musicState ? <i className="bi bi-play-fill text-5xl flex mx-auto pl-1"></i> : <i className="bi bi-pause-fill text-5xl flex mx-auto"></i>}
+              {musicState ? (
+                <i className="bi bi-pause-fill text-5xl flex mx-auto"></i>
+              ) : (
+                <i className="bi bi-play-fill text-5xl flex mx-auto pl-1"></i>
+              )}
             </button>
           </div>
         </div>
