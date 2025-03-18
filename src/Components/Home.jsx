@@ -152,8 +152,8 @@ export default function Home() {
             {/* Div for Text. */}
             <div className="Text">
               <h1 className='montserrat text-lg leading-[1.2] font-bold'>Naruto</h1>
-              <h1 className='inter text-lg leading-[1.2]'>(TV Series 2002 - 2007)</h1>
-              <h1 className='inter text-lg leading-[1.2]'>Each Episode Duration: 24m</h1>
+              <h1 className='inter text-base leading-[1.2]'>(TV Series 2002 - 2007)</h1>
+              <h1 className='inter text-base leading-[1.2]'>Each Episode Duration: 24m</h1>
             </div>
             {/* Div for button. */}
             <div className="button">
@@ -170,8 +170,8 @@ export default function Home() {
             {/* Div for Text. */}
             <div className="Text">
               <h1 className='montserrat text-lg leading-[1.2] font-bold'>Naruto: Shippuden</h1>
-              <h1 className='inter text-lg leading-[1.2]'>(TV Series 2007 - 2017)</h1>
-              <h1 className='inter text-lg leading-[1.2]'>Each Episode Duration: 24m</h1>
+              <h1 className='inter text-base leading-[1.2]'>(TV Series 2007 - 2017)</h1>
+              <h1 className='inter text-base leading-[1.2]'>Each Episode Duration: 24m</h1>
             </div>
             {/* Div for button. */}
             <div className="button">
@@ -188,12 +188,66 @@ export default function Home() {
             {/* Div for Text. */}
             <div className="Text">
               <h1 className='montserrat text-lg leading-[1.2] font-bold'>Naruto Films</h1>
-              <h1 className='inter text-lg leading-[1.2]'>Films from 2004 - 2015</h1>
-              <h1 className='inter text-lg leading-[1.2]'>Each Film Duration: 1hr to 1.40hr</h1>
+              <h1 className='inter text-base leading-[1.2]'>Films from 2004 - 2015</h1>
+              <h1 className='inter text-base leading-[1.2]'>Each Film Duration: 1hr to 1.40hr</h1>
             </div>
             {/* Div for button. */}
             <div className="button">
               <a href='https://www.imdb.com/list/ls078035885/' target='_blank' className='mainbutton'>Watch Now</a>
+            </div>
+          </div>
+
+          {/* Card 4 Naruto Comics. */}
+          <div className="Naruto Comics bg-white px-8 py-6 flex flex-col justify-between h-[31rem] w-[20rem] mt-8 rounded-lg">
+            {/* Div for Image. */}
+            <div className="Image">
+              <img src="/Photos/Naruto Comics.png" alt="" className='h-[20rem] w-max flex mx-auto' />
+            </div>
+            {/* Div for Text. */}
+            <div className="Text">
+              <h1 className='montserrat text-lg leading-[1.2] font-bold'>Naruto Comics</h1>
+              <h1 className='inter text-base leading-[1.2]'>Comics from 1999 - Present</h1>
+              <h1 className='inter text-base leading-[1.2]'>Each Volume has: 180 to 200p</h1>
+            </div>
+            {/* Div for button. */}
+            <div className="button">
+              <a href='https://naruto-official.com/en/comics/01_83' target='_blank' className='mainbutton'>Read Now</a>
+            </div>
+          </div>
+
+          {/* Card 5 Boruto. */}
+          <div className="Boruto bg-white px-8 py-6 flex flex-col justify-between h-[31rem] w-[20rem] mt-8 rounded-lg">
+            {/* Div for Image. */}
+            <div className="Image">
+              <img src="/Photos/Boruto.png" alt="" className='h-[20rem] w-max flex mx-auto' />
+            </div>
+            {/* Div for Text. */}
+            <div className="Text">
+              <h1 className='montserrat text-lg leading-[1.2] font-bold'>Boruto</h1>
+              <h1 className='inter text-base leading-[1.2]'>(TV Series 2017 - 2023) </h1>
+              <h1 className='inter text-base leading-[1.2]'>Each Episode Duration: 23m</h1>
+            </div>
+            {/* Div for button. */}
+            <div className="button">
+              <a href='https://www.imdb.com/title/tt6342474/' target='_blank' className='mainbutton'>Watch Now</a>
+            </div>
+          </div>
+
+          {/* Card 6 Boruto: Naruto the Movie. */}
+          <div className="Boruto: Naruto the Movie bg-white px-8 py-6 flex flex-col justify-between h-[31rem] w-[20rem] mt-8 rounded-lg">
+            {/* Div for Image. */}
+            <div className="Image">
+              <img src="/Photos/Boruto Movie.png" alt="" className='h-[20rem] w-max flex mx-auto' />
+            </div>
+            {/* Div for Text. */}
+            <div className="Text">
+              <h1 className='montserrat text-lg leading-[1.2] font-bold'>Boruto: Naruto the Movie</h1>
+              <h1 className='inter text-base leading-[1.2]'>2015</h1>
+              <h1 className='inter text-base leading-[1.2]'>Movie Duration: 1h 35m</h1>
+            </div>
+            {/* Div for button. */}
+            <div className="button">
+              <a href='https://www.imdb.com/title/tt4618398/' target='_blank' className='mainbutton'>Watch Now</a>
             </div>
           </div>
 
