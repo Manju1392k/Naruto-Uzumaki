@@ -4,11 +4,14 @@
 /* Importing Inter font family. */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* Importing Montserrat font family. */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Importing boostrap icons. */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 /* Removing default margin & padding. */
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -21,6 +24,11 @@
 /* Inter font family css. */
 .inter {
     font-family: "Inter", sans-serif;
+}
+
+/* Montserrat font family css. */
+.montserrat{
+    font-family: "Montserrat", sans-serif;
 }
 
 /* Main theme color css.  */
@@ -36,4 +44,19 @@
 /* SignUp button border css. */
 .bordercolor {
     border-color: #FF851B;
+}
+
+/* Main button css. */
+.mainbutton {
+    padding: 0.5rem 1rem;
+    background-color: #FF851B;
+    border-radius: 6px;
+}
+
+.mainbutton:hover {
+    opacity: 0.75;
+}
+
+.mainbutton::after {
+    opacity: 0.50;
 }
