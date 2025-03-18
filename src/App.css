@@ -27,7 +27,7 @@
 }
 
 /* Montserrat font family css. */
-.montserrat{
+.montserrat {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -48,9 +48,12 @@
 
 /* Main button css. */
 .mainbutton {
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 2.5rem;
     background-color: #FF851B;
-    border-radius: 6px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
 }
 
 .mainbutton:hover {

@@ -67,17 +67,27 @@ export default function Home() {
       </div>
 
       {/* Div for All age photos of Naruto. */}
-      <div className="Image&Text flex justify-around items-center w-[100vw] h-max">
+      <div className="Image&Text flex justify-around items-center w-[100vw] h-max mt-5">
         {/* Div for All age photos of Naruto. */}
         <div className="Image">
           <img src="/Photos/All Age Naruto Image.png" alt="" className='h-[15rem]' />
         </div>
         {/* Div for Text. */}
-        <div className="text flex flex-col w-[50vw]">
+        <div className="text flex flex-col items-start w-[50vw]">
           <h1 className='montserrat font-extrabold text-justify text-xl'>Naruto, a famous anime from Japan, is one of the most popular anime series in the world.</h1>
-          <h1 className='inter text-justify text-sm'>The story of Naruto follows the journey of Naruto Uzumaki, a young ninja who dreams of becoming the strongest ninja and the leader of his village, called the Hokage. The series explores themes of friendship, perseverance, and self discovery, which many viewers can relate to and find inspiring. The plot has many twists and turns, keeping the audience interested. The characters in Naruto are unique and memorable. Each character has their own backstory, personality, and abilities. This makes them relatable and interesting to watch. The relationships and interactions between the characters add depth to the story and keep viewers invested in their journeys. Naruto features many intense and well animated action scenes. The battles are exciting and showcase a variety of ninja techniques and powers. These action scenes are visually impressive and keep viewers on the edge of their seats. Naruto has a large and loyal fanbase. The series has been adapted into multiple forms of media, including manga, anime, movies, and video games, which have helped to expand its popularity. The merchandise, such as action figures, clothing, and accessories, also contributes to its widespread recognition.</h1>
+          <h1 className='inter text-justify text-sm my-4'>The story of Naruto follows the journey of Naruto Uzumaki, a young ninja who dreams of becoming the strongest ninja and the leader of his village, called the Hokage. The series explores themes of friendship, perseverance, and self discovery, which many viewers can relate to and find inspiring. The plot has many twists and turns, keeping the audience interested. The characters in Naruto are unique and memorable. Each character has their own backstory, personality, and abilities. This makes them relatable and interesting to watch. The relationships and interactions between the characters add depth to the story and keep viewers invested in their journeys. Naruto features many intense and well animated action scenes. The battles are exciting and showcase a variety of ninja techniques and powers. These action scenes are visually impressive and keep viewers on the edge of their seats. Naruto has a large and loyal fanbase. The series has been adapted into multiple forms of media, including manga, anime, movies, and video games, which have helped to expand its popularity. The merchandise, such as action figures, clothing, and accessories, also contributes to its widespread recognition.</h1>
+          <a href='https://www.imdb.com/title/tt0409591/' target='_blank' className='mainbutton'>Watch Now</a>
         </div>
       </div>
+
+      {/* Div for the creators of Naruto. */}
+      <div className="NarutoCreators">
+        {/* Div for heading. */}
+        <div className="heading w-[100%] flex justify-around items-center border-b-2 border-[#FF851B]">
+          <h1>The Creators of Naruto</h1>
+        </div>
+      </div>
+
     </>
   )
 }
