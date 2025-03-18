@@ -81,10 +81,23 @@ export default function Home() {
       </div>
 
       {/* Div for the creators of Naruto. */}
-      <div className="NarutoCreators">
+      <div className="NarutoCreators w-[100%] bg-black px-10 py-4 mt-5">
         {/* Div for heading. */}
         <div className="heading w-[100%] flex justify-around items-center border-b-2 border-[#FF851B]">
-          <h1>The Creators of Naruto</h1>
+          <h1 className='maintextcolor font-extrabold text-2xl montserrat'>The Creators of Naruto</h1>
+        </div>
+        {/* Div for naruto creator image box. */}
+        <div className="NarutoCreatorImage&Text w-[100%] bg-white mt-5 rounded-sm flex justify-around items-center py-5">
+          {/* Div for Text. */}
+          <div className="text flex flex-col items-start w-[50vw]">
+            <h1 className='montserrat font-extrabold text-justify text-xl'>Masashi Kishimoto the creator Naruto Manga Series</h1>
+            <h1 className='inter text-justify text-sm my-4'>The creator of the Naruto manga is Masashi Kishimoto. He was born on November 8, 1974, in Okayama Prefecture, Japan. Kishimoto showed an interest in drawing from a young age and was inspired by manga artists like Akira Toriyama, the creator of Dragon Ball. Kishimoto's Naruto manga was first serialized in Weekly Shōnen Jump magazine in 1999 and continued until 2014. The series has sold over 250 million copies worldwide and has been adapted into anime, films, video games, and other media. Kishimoto also supervised the two canonical anime films, The Last: Naruto the Movie and Boruto: Naruto the Movie.</h1>
+            <a href='https://en.wikipedia.org/wiki/Masashi_Kishimoto' target='_blank' className='mainbutton'>More Details</a>
+          </div>
+          {/* Div for Naruto Creator. */}
+          <div className="Image">
+            <img src="/Photos/Naruto Creator Image.png" alt="" className='h-[13rem]' />
+          </div>
         </div>
       </div>
 
