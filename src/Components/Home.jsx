@@ -217,7 +217,7 @@ export default function Home() {
           <div className="NarutoUzumakiCard flex flex-col justify-around items-center py-4 border-[0.3rem] border-[#FF851B] px-4 rounded-lg mt-4 overflow-hidden">
             {/* Div for image. */}
             <div className="image">
-              <img src="/Photos/Naruto Uzumaki.png" alt="" className='h-[16rem] w-[12rem] sm:w-[20rem] sm:h-[25rem]' />
+              <img src="/Photos/Naruto Uzumaki.png" alt="" className='object-cover h-[16rem] w-[12rem] sm:w-[20rem] sm:h-[25rem] lg:w-[30rem] lg:h-[35rem]' />
             </div>
             {/* Div for Name. */}
             <h1 className='text-xl font-bold mt-2'>Naruto Uzumaki</h1>
@@ -227,7 +227,7 @@ export default function Home() {
           <div className="Sasuke UchihaCard flex flex-col justify-around items-center py-4 border-[0.3rem] border-[#FF851B] px-4 rounded-lg mt-4 overflow-hidden">
             {/* Div for image. */}
             <div className="image">
-              <img src="/Photos/Sasuke Uchiha.png" alt="" className='h-[16rem] w-[12rem] sm:w-[20rem] sm:h-[25rem]' />
+              <img src="/Photos/Sasuke Uchiha.png" alt="" className='object-cover h-[16rem] w-[12rem] sm:w-[20rem] sm:h-[25rem] lg:w-[30rem] lg:h-[35rem]' />
             </div>
             {/* Div for Name. */}
             <h1 className='text-xl font-bold mt-2'>Sasuke Uchiha</h1>
@@ -237,7 +237,7 @@ export default function Home() {
           <div className="SakuraCard flex flex-col justify-around items-center py-4 border-[0.3rem] border-[#FF851B] px-4 rounded-lg mt-4 overflow-hidden">
             {/* Div for image. */}
             <div className="image">
-              <img src="/Photos/Sakura.png" alt="" className='h-[16rem] w-[12rem] sm:w-[20rem] sm:h-[25rem]' />
+              <img src="/Photos/Sakura.png" alt="" className='object-cover h-[16rem] w-[12rem] sm:w-[20rem] sm:h-[25rem] lg:w-[30rem] lg:h-[35rem]' />
             </div>
             {/* Div for Name. */}
             <h1 className='text-xl font-bold mt-2'>Sakura</h1>
@@ -247,7 +247,7 @@ export default function Home() {
           <div className="Kakashi HatakeCard flex flex-col justify-around items-center py-4 border-[0.3rem] border-[#FF851B] px-4 rounded-lg mt-4 overflow-hidden">
             {/* Div for image. */}
             <div className="image">
-              <img src="/Photos/Kakashi Hatake.png" alt="" className='h-[16rem] w-[12rem] sm:w-[20rem] sm:h-[25rem]' />
+              <img src="/Photos/Kakashi Hatake.png" alt="" className='object-cover h-[16rem] w-[12rem] sm:w-[20rem] sm:h-[25rem] lg:w-[30rem] lg:h-[35rem]' />
             </div>
             {/* Div for Name. */}
             <h1 className='text-xl font-bold mt-2'>Kakashi Hatake</h1>

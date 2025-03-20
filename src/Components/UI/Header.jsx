@@ -106,6 +106,45 @@ export default function Header() {
                 </div>
             </div>
 
+            {/* Responsive design Navbar. */}
+            <div className="ResponsiveNavbar hidden sm:flex lg:flex bg-black w-[100%]  justify-around items-center flex-col px-8 py-4">
+
+                {/* Div for Name & MenuIcon. */}
+                <div className="NameMenuIcon w-[100%] flex justify-between items-center">
+                    {/* div for logo. */}
+                    <div className="logo">
+                        <NavLink to='/' end>
+                            <h1 className='maintextcolor madimione text-3xl'>Naruto Uzumaki</h1>
+                        </NavLink>
+                    </div>
+
+                    {/* Div for Menu Icon. */}
+                    <div className="Menuicon">
+                        <img src="/Photos/Menu.png" alt="" className='h-[1rem]' />
+                    </div>
+                </div>
+
+                {/* Div for Search. */}
+                <div className="Search w-[100%] mt-3">
+                    {/* Div for Search box. */}
+                    <div className="serachbox bg-white py-2 px-2 rounded-md flex items-center justify-around">
+                        {/* Div for borderline. */}
+                        <div className="borderline border-r-[0.2rem] border-black pr-2 w-[100%]">
+                            {/* Input field for search. */}
+                            <input type="search" placeholder='Search' className='px-2 border-2 border-black h-[0.5rem] text-xs focus:outline-none py-3 font-semibold inter w-[100%] rounded-md'
+                                value={searchTerm}
+                                onChange={handleSearch}
+                            />
+                        </div>
+                        {/* Div for Search Icon. */}
+                        <div className="SearchIcon">
+                            <i className="bi bi-search text-base pl-2"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
             {/* If the search input is actived or user searching for charactor the below div will popup. */}
             {searchTerm && (
                 // Div for background of cards.
