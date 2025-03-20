@@ -1,17 +1,14 @@
 import React from 'react'
 import '../App.css'
+import { NavLink } from "react-router";
 
 // Importing Header & Footer.
-import Header from './UI/Header.jsx'
 import Footer from './UI/Footer.jsx'
 
 export default function Home() {
 
   return (
     <>
-
-      {/* Navbar Component. */}
-      <Header />
 
       {/* Div for All age photos & text of Naruto. */}
       <div className="Image&Text flex justify-around items-center w-[100vw] h-max mt-5">
@@ -204,7 +201,7 @@ export default function Home() {
         {/* Div for heading. */}
         <div className="heading w-[100%] flex justify-between items-start border-b-2 border-black">
           <h1 className='text-black font-extrabold text-2xl montserrat'>Naruto Main Charactors</h1>
-          <a href='https://www.imdb.com/title/tt4618398/' target='_blank' className='watchbtn mb-2'>More</a>
+          <NavLink className='watchbtn mb-1' to='/AllCharactors' end>More</NavLink>
         </div>
 
         {/* Div for Charactor Cards. */}
