@@ -157,7 +157,7 @@ export default function Home() {
             </div>
             {/* Div for button. */}
             <div className="button">
-              <a href='https://www.imdb.com/title/tt0409591/' target='_blank' className='mainbutton'>Watch Now</a>
+              <a href='https://www.imdb.com/title/tt0409591/' target='_blank' className='watchbtn'>Watch Now</a>
             </div>
           </div>
 
@@ -175,7 +175,7 @@ export default function Home() {
             </div>
             {/* Div for button. */}
             <div className="button">
-              <a href='https://www.imdb.com/title/tt0988824/' target='_blank' className='mainbutton'>Watch Now</a>
+              <a href='https://www.imdb.com/title/tt0988824/' target='_blank' className='watchbtn'>Watch Now</a>
             </div>
           </div>
 
@@ -193,7 +193,7 @@ export default function Home() {
             </div>
             {/* Div for button. */}
             <div className="button">
-              <a href='https://www.imdb.com/list/ls078035885/' target='_blank' className='mainbutton'>Watch Now</a>
+              <a href='https://www.imdb.com/list/ls078035885/' target='_blank' className='watchbtn'>Watch Now</a>
             </div>
           </div>
 
@@ -211,7 +211,7 @@ export default function Home() {
             </div>
             {/* Div for button. */}
             <div className="button">
-              <a href='https://naruto-official.com/en/comics/01_83' target='_blank' className='mainbutton'>Read Now</a>
+              <a href='https://naruto-official.com/en/comics/01_83' target='_blank' className='watchbtn'>Read Now</a>
             </div>
           </div>
 
@@ -229,7 +229,7 @@ export default function Home() {
             </div>
             {/* Div for button. */}
             <div className="button">
-              <a href='https://www.imdb.com/title/tt6342474/' target='_blank' className='mainbutton'>Watch Now</a>
+              <a href='https://www.imdb.com/title/tt6342474/' target='_blank' className='watchbtn'>Watch Now</a>
             </div>
           </div>
 
@@ -247,11 +247,67 @@ export default function Home() {
             </div>
             {/* Div for button. */}
             <div className="button">
-              <a href='https://www.imdb.com/title/tt4618398/' target='_blank' className='mainbutton'>Watch Now</a>
+              <a href='https://www.imdb.com/title/tt4618398/' target='_blank' className='watchbtn'>Watch Now</a>
             </div>
           </div>
 
         </div>
+      </div>
+
+      {/* Naruto Main Charactors section. */}
+      <div className="NarutoMainCharactors w-[100%] bg-white px-10 py-4 flex flex-col">
+
+        {/* Div for heading. */}
+        <div className="heading w-[100%] flex justify-between items-start border-b-2 border-black">
+          <h1 className='text-black font-extrabold text-2xl montserrat'>Naruto Main Charactors</h1>
+          <a href='https://www.imdb.com/title/tt4618398/' target='_blank' className='watchbtn mb-2'>More</a>
+        </div>
+
+        {/* Div for Charactor Cards. */}
+        <div className="CharactorsCards w-[100%] flex justify-between items-center">
+
+          {/* Naruto Uzumaki card. */}
+          <div className="NarutoUzumakiCard flex flex-col justify-around items-center py-4 border-[0.3rem] border-[#FF851B] px-4 rounded-lg mt-4 overflow-hidden">
+            {/* Div for image. */}
+            <div className="image">
+              <img src="/Photos/Naruto Uzumaki.png" alt="" className='h-[16rem] w-[12rem]' />
+            </div>
+            {/* Div for Name. */}
+            <h1 className='text-xl font-bold mt-2'>Naruto Uzumaki</h1>
+          </div>
+
+          {/* Sasuke Uchiha card. */}
+          <div className="Sasuke UchihaCard flex flex-col justify-around items-center py-4 border-[0.3rem] border-[#FF851B] px-4 rounded-lg mt-4 overflow-hidden">
+            {/* Div for image. */}
+            <div className="image">
+              <img src="/Photos/Sasuke Uchiha.png" alt="" className='h-[16rem] w-[12rem]' />
+            </div>
+            {/* Div for Name. */}
+            <h1 className='text-xl font-bold mt-2'>Sasuke Uchiha</h1>
+          </div>
+
+          {/* Sakura card. */}
+          <div className="SakuraCard flex flex-col justify-around items-center py-4 border-[0.3rem] border-[#FF851B] px-4 rounded-lg mt-4 overflow-hidden">
+            {/* Div for image. */}
+            <div className="image">
+              <img src="/Photos/Sakura.png" alt="" className='h-[16rem] w-[12rem]' />
+            </div>
+            {/* Div for Name. */}
+            <h1 className='text-xl font-bold mt-2'>Sakura</h1>
+          </div>
+
+          {/* Kakashi Hatake card. */}
+          <div className="Kakashi HatakeCard flex flex-col justify-around items-center py-4 border-[0.3rem] border-[#FF851B] px-4 rounded-lg mt-4 overflow-hidden">
+            {/* Div for image. */}
+            <div className="image">
+              <img src="/Photos/Kakashi Hatake.png" alt="" className='h-[16rem] w-[12rem]' />
+            </div>
+            {/* Div for Name. */}
+            <h1 className='text-xl font-bold mt-2'>Kakashi Hatake</h1>
+          </div>
+
+        </div>
+
       </div>
 
     </>
