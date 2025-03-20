@@ -99,7 +99,7 @@ export default function Home() {
             {/* Div for button. */}
             <div className="button">
               <a href='https://www.imdb.com/title/tt0409591/' target='_blank' className='watchbtn sm:hidden lg:hidden'>Watch Now</a>
-              <a href='https://www.imdb.com/title/tt0409591/' target='_blank' className='Reswatchbtn sm:flex lg:flex'>Watch Now</a>
+              <a href='https://www.imdb.com/title/tt0409591/' target='_blank' className='Reswatchbtn hidden sm:flex lg:flex'>Watch Now</a>
             </div>
           </div>
 
@@ -118,7 +118,7 @@ export default function Home() {
             {/* Div for button. */}
             <div className="button">
               <a href='https://www.imdb.com/title/tt0988824/' target='_blank' className='watchbtn sm:hidden lg:hidden'>Watch Now</a>
-              <a href='https://www.imdb.com/title/tt0988824/' target='_blank' className='Reswatchbtn sm:flex lg:flex'>Watch Now</a>
+              <a href='https://www.imdb.com/title/tt0988824/' target='_blank' className='Reswatchbtn hidden sm:flex lg:flex'>Watch Now</a>
             </div>
           </div>
 
@@ -137,7 +137,7 @@ export default function Home() {
             {/* Div for button. */}
             <div className="button">
               <a href='https://www.imdb.com/list/ls078035885/' target='_blank' className='watchbtn sm:hidden lg:hidden'>Watch Now</a>
-              <a href='https://www.imdb.com/list/ls078035885/' target='_blank' className='Reswatchbtn sm:flex lg:flex'>Watch Now</a>
+              <a href='https://www.imdb.com/list/ls078035885/' target='_blank' className='Reswatchbtn hidden sm:flex lg:flex'>Watch Now</a>
             </div>
           </div>
 
@@ -156,7 +156,7 @@ export default function Home() {
             {/* Div for button. */}
             <div className="button">
               <a href='https://naruto-official.com/en/comics/01_83' target='_blank' className='watchbtn sm:hidden lg:hidden'>Read Now</a>
-              <a href='https://naruto-official.com/en/comics/01_83' target='_blank' className='Reswatchbtn sm:flex lg:flex'>Read Now</a>
+              <a href='https://naruto-official.com/en/comics/01_83' target='_blank' className='Reswatchbtn hidden sm:flex lg:flex'>Read Now</a>
             </div>
           </div>
 
@@ -175,7 +175,7 @@ export default function Home() {
             {/* Div for button. */}
             <div className="button">
               <a href='https://www.imdb.com/title/tt6342474/' target='_blank' className='watchbtn sm:hidden lg:hidden'>Watch Now</a>
-              <a href='https://www.imdb.com/title/tt6342474/' target='_blank' className='Reswatchbtn sm:flex lg:flex'>Watch Now</a>
+              <a href='https://www.imdb.com/title/tt6342474/' target='_blank' className='Reswatchbtn hidden sm:flex lg:flex'>Watch Now</a>
             </div>
           </div>
 
@@ -194,7 +194,7 @@ export default function Home() {
             {/* Div for button. */}
             <div className="button">
               <a href='https://www.imdb.com/title/tt4618398/' target='_blank' className='watchbtn sm:hidden lg:hidden'>Watch Now</a>
-              <a href='https://www.imdb.com/title/tt4618398/' target='_blank' className='Reswatchbtn sm:flex lg:flex'>Watch Now</a>
+              <a href='https://www.imdb.com/title/tt4618398/' target='_blank' className='Reswatchbtn hidden sm:flex lg:flex'>Watch Now</a>
             </div>
           </div>
 
@@ -255,7 +255,7 @@ export default function Home() {
 
         </div>
 
-        <NavLink className='Reswatchbtn sm:flex lg:flex mt-5' to='/AllCharactors' end>More</NavLink>
+        <NavLink className='Reswatchbtn hidden sm:flex lg:flex mt-5' to='/AllCharactors' end>More</NavLink>
 
       </div>
 

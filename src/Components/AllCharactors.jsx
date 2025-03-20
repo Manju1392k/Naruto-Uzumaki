@@ -31,8 +31,8 @@ export default function AllCharactors() {
   if (Loading) {
     return (
       <>
-        {/* Div for contaier. */}
-        <div className="container w-[100vw] h-[80vh] flex justify-around items-center">
+        {/* Div for Background. */}
+        <div className="Background w-[100vw] h-[80vh] sm:h-[100vh] lg:h-[100vh] flex justify-around items-center">
           <img src="/Photos/Loadinggif.gif" alt="" className='h-[10rem]' />
         </div>
         <Footer />
@@ -51,15 +51,15 @@ export default function AllCharactors() {
         </div>
 
         {/* Div for Charactor Cards. */}
-        <div className="CharactorsCards w-[100%] grid grid-cols-4">
+        <div className="CharactorsCards w-[100%] grid grid-cols-4 sm:grid-cols-1 lg:grid-cols-1">
 
           {data.map(Charactor => (
             <>
               {/* Charactor card. */}
-              <div className="NarutoUzumakiCard flex flex-col justify-around items-center py-4 border-[0.3rem] border-[#FF851B] px-4 rounded-lg mt-4 overflow-hidden mx-4" key={Charactor.id}>
+              <div key={Charactor.id} className="NarutoUzumakiCard flex flex-col justify-around items-center py-4 border-[0.3rem] border-[#FF851B] px-4 rounded-lg mt-4 overflow-hidden mx-4">
                 {/* Div for image. */}
                 <div className="image">
-                  <img src={Charactor.images[0]} alt="" className='h-[18rem] w-[12rem] rounded-md object-cover' />
+                  <img src={Charactor.images[0]} alt="" className='h-[18rem] w-[12rem] rounded-md object-cover sm:h-[30rem] sm:w-[25rem] lg:h-[30rem] lg:w-[25rem]' />
                 </div>
                 {/* Div for Name. */}
                 <h1 className='text-xl font-bold mt-2'>{Charactor.name}</h1>

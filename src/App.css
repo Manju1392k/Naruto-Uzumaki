@@ -16,7 +16,7 @@
     padding: 0;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -69,7 +69,7 @@ body{
 }
 
 /* Watchnow button css. */
-.watchbtn{
+.watchbtn {
     padding: 0.4rem 1rem;
     background-color: #FF851B;
     border-radius: 4px;
@@ -79,7 +79,7 @@ body{
 }
 
 /* Responsive Design  watcbtn. */
-.Reswatchbtn{
+.Reswatchbtn {
     padding: 0.4rem 1rem;
     background-color: #FF851B;
     border-radius: 4px;
@@ -87,6 +87,5 @@ body{
     font-family: "Inter", sans-serif;
     font-size: 0.8rem;
     width: 100%;
-    display: flex;
     justify-content: center;
 }
