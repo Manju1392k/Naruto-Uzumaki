@@ -14,7 +14,7 @@ export default function AllCharactors() {
   const [Loading, setLoading] = useState(true)
 
   // Fetching Naruto Charactors from link.
-  // https://naruto-api-rsl3.onrender.com/api/v1/characters I got this link from github profile, But this link is only providing 50 charactors of naruto only and this api is free. Link github source: https://github.com/gustavonobreza/naruto-api
+  // https://naruto-api-rsl3.onrender.com/api/v1/characters I got this link from github profile, But this link is only providing 50 charactors of naruto only and this api is free, I did not when this api service will be stopped, 'When you see loading page for long with out cards that mean's this api is will not working. Link github source: https://github.com/gustavonobreza/naruto-api
   const fetchData = async () => {
     try {
       const response = await axios.get('https://naruto-api-rsl3.onrender.com/api/v1/characters');
@@ -59,7 +59,7 @@ export default function AllCharactors() {
               <div className="NarutoUzumakiCard flex flex-col justify-around items-center py-4 border-[0.3rem] border-[#FF851B] px-4 rounded-lg mt-4 overflow-hidden mx-4" key={Charactor.id}>
                 {/* Div for image. */}
                 <div className="image">
-                  <img src={Charactor.images[0]} alt="" className='h-[13rem] w-[12rem] rounded-md object-cover' />
+                  <img src={Charactor.images[0]} alt="" className='h-[18rem] w-[12rem] rounded-md object-cover' />
                 </div>
                 {/* Div for Name. */}
                 <h1 className='text-xl font-bold mt-2'>{Charactor.name}</h1>
