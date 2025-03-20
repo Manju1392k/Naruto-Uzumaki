@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useRef, useEffect } from 'react';
+import { NavLink } from "react-router";
 
 export default function Header() {
 
@@ -35,7 +36,9 @@ export default function Header() {
 
                 {/* div for logo. */}
                 <div className="logo">
+                    <NavLink to='/' end>
                     <h1 className='maintextcolor madimione text-3xl'>Naruto Uzumaki</h1>
+                    </NavLink>
                 </div>
 
                 {/* Div for Search box. */}
