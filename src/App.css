@@ -89,3 +89,8 @@ body {
     width: 100%;
     justify-content: center;
 }
+
+/* Flex Menubar css. */
+.flexMenubarcss{
+    display: flex;
+}

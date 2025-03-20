@@ -16,6 +16,9 @@ export default function Header() {
     // Based on keyword the charactor will be display. FilteredCharactors usestate.
     const [filteredCharacters, setFilteredCharacters] = useState([]);
 
+    // To open & close menubar.
+    const [Menubar, setMenubar] = useState(false)
+
     // useEffect to play the music from when it is paused time line. If there is not previous time line it will play from start.
     useEffect(() => {
         audioRef.current = new Audio("/Audio/Naruto Theme.mp3");
@@ -61,6 +64,11 @@ export default function Header() {
         setFilteredCharacters(filtered);
     };
 
+    // Function to Open & Close Menubar.
+    const OpenCloseMenu = () => {
+        setMenubar(!Menubar)
+    }
+
     return (
         <>
             {/* Div for navbar (Desktop) */}
@@ -91,8 +99,11 @@ export default function Header() {
 
                 {/* Div for buttons. */}
                 <div className="buttons flex items-center">
+
                     <button className='maincolor pb-1 px-2 text-[0.9rem] font-bold rounded-sm'>Login</button>
+
                     <button className='border-2 bordercolor maintextcolor pb-1 px-2 text-[0.8rem] font-bold rounded-sm ml-3 mr-6'>SignUp</button>
+
                     {/* Div for Playpause. */}
                     <div className="Playpausebutton maincolor rounded-full flex justify-center items-center h-[2.7rem] w-[2.7rem]">
                         <button onClick={Playmusic}>
@@ -103,6 +114,7 @@ export default function Header() {
                             )}
                         </button>
                     </div>
+
                 </div>
             </div>
 
@@ -120,7 +132,7 @@ export default function Header() {
 
                     {/* Div for Menu Icon. */}
                     <div className="Menuicon">
-                        <img src="/Photos/Menu.png" alt="" className='h-[1rem]' />
+                        <img src="/Photos/Menu.png" alt="" className='h-[1rem]' onClick={OpenCloseMenu} />
                     </div>
                 </div>
 
@@ -141,6 +153,26 @@ export default function Header() {
                             <i className="bi bi-search text-base pl-2"></i>
                         </div>
                     </div>
+                </div>
+
+            </div>
+
+            {/* Responsive Menubar. */}
+            <div className={`ResponsiveMenubar hidden flex-col items-center py-5 bg-black  ${Menubar ? 'flexMenubarcss' : 'hidden'}`}>
+
+                <button className='maincolor pb-1 px-2 text-[0.9rem] font-bold rounded-sm'>Login</button>
+
+                <button className='border-2 bordercolor maintextcolor pb-1 px-2 text-[0.8rem] font-bold rounded-sm my-4'>SignUp</button>
+
+                {/* Div for Playpause. */}
+                <div className="Playpausebutton maincolor rounded-full flex justify-center items-center h-[2.7rem] w-[2.7rem]">
+                    <button onClick={Playmusic}>
+                        {musicState ? (
+                            <i className="bi bi-pause-fill text-4xl flex mx-auto"></i>
+                        ) : (
+                            <i className="bi bi-play-fill text-4xl flex mx-auto pl-1"></i>
+                        )}
+                    </button>
                 </div>
 
             </div>
