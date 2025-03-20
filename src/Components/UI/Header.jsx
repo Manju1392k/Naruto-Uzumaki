@@ -63,8 +63,8 @@ export default function Header() {
 
     return (
         <>
-            {/* Div for navbar */}
-            <div className="navbar flex justify-around items-center w-[100vw] py-4 bg-black">
+            {/* Div for navbar (Desktop) */}
+            <div className="navbar Desktop flex justify-around items-center w-[100vw] py-4 bg-black sm:hidden lg:hidden">
 
                 {/* div for logo. */}
                 <div className="logo">
@@ -109,7 +109,7 @@ export default function Header() {
             {/* If the search input is actived or user searching for charactor the below div will popup. */}
             {searchTerm && (
                 // Div for background of cards.
-                <div className="bg-white py-4 px-8 w-full h-max">
+                <div className="bg-white py-4 px-8 w-full h-max flex flex-col">
                     {filteredCharacters.length > 0 ? (
                         filteredCharacters.map((character, index) => (
                             <>
